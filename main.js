@@ -101,7 +101,7 @@ const pies = [
 
   const handleButtonClick = (event) => {
     if (event.target.id === "All") {
-      pieBuilder(pie);
+      pieBuilder(pies);
     }
     if (event.target.id === "Trinity") {
       const trinityPies = filterPies(pies, event.target.id);
@@ -112,6 +112,7 @@ const pies = [
       pieBuilder(ajaPies);
     }
     if (event.target.id === "Doc") {
+      const docPies = filterPies(pies, event.target.id); 
       pieBuilder(docPies);
     }
   }
